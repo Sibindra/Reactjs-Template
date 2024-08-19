@@ -1,6 +1,22 @@
 import React from 'react';
 import { TButtonProps } from '@app/constants/types/button';
 
+/**
+ * ------------------------------------------------------------
+ * @param children - The content of the button.
+ * @param variant - The variant of the button.
+ * @param className - The class name of the button.
+ * @param size - The size of the button.
+ * @param props - The props of the button.
+ *
+ * @returns The button component.
+ *
+ * @example
+ * <Button variant="primary" size="md" onClick={() => console.log('clicked')}>
+ *  Click me
+ * </Button>
+ * ------------------------------------------------------------
+ */
 const Button: React.FC<TButtonProps> = ({
   children,
   variant = 'primary',
